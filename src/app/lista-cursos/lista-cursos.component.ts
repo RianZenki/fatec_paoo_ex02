@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-lista-cursos',
@@ -7,23 +7,5 @@ import { Component} from '@angular/core';
 })
 export class ListaCursosComponent {
 
-  dadosCurso = [
-    {
-      curso:"MySQL",
-      cargaHoraria: "80 horas"
-    },
-    {
-      curso:"PHP",
-      cargaHoraria: "120 horas"
-    },
-    {
-      curso:"Linguagem C",
-      cargaHoraria: "120 horas"
-    },
-    {
-      curso:"Angular",
-      cargaHoraria: "80 horas"
-    },
-  ]
-
+  @Input () curso
 }

@@ -1,2 +1,10 @@
-<app-cursos></app-cursos>
-<app-lista-cursos></app-lista-cursos>
+<div class="container mx-auto w-50 p-2">
+  <app-cadastro-curso (adicionarCurso)="onAdicionarCurso($event)"></app-cadastro-curso>
+</div>
+
+<div class="row mx-auto w-50 p-2" >
+  <div class="col-4" *ngFor="let curso of cursos">
+    <app-cursos [curso]="curso"></app-cursos>
+  </div>
+
+</div>

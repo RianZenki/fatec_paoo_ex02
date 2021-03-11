@@ -1,15 +1,7 @@
-<div class="mx-auto bg-light rounded w-50 p-2 mb-5 mt-5">
-  <h1 class="p-3 text-muted">Informações do curso</h1>
-  <table class="table">
-    <thead class="thead-light">
-      <tr>
-        <th>Curso</th>
-        <th>Carga Horária</th>
-      </tr>
-    </thead>
-      <tr>
-        <td>{{curso}}</td>
-        <td>{{cargaHoraria}}</td>
-      </tr>
-  </table>
+<div class="card p-0 m-2 mb-4">
+  <div class="card-header bg-lightgray">Dados do curso</div>
+  <div class="card-body">
+    <p>{{curso.nome}}</p>
+    <p>{{curso.cargaHoraria}}</p>
+  </div>
 </div>

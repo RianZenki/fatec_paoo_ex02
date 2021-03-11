@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projeto-curso';
+  cursos: object[] = []
+
+  onAdicionarCurso(curso) {
+    this.cursos = [curso, ...this.cursos]
+  }
 }
